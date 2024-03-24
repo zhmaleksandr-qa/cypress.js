@@ -58,8 +58,8 @@ describe('Покупка аватара', function () {
     
     it('', function () {
         cy.visit('https://pokemonbattle.me/');
-        cy.get(':nth-child(1) > .auth__input').type('zhmurko.aleksandr@yandex.ru');
-        cy.get('#password').type('tpM-aZt-2Gg-bTq');
+        cy.get(':nth-child(1) > .auth__input').type('ЛОГИН');
+        cy.get('#password').type('ПАРОЛЬ');
         cy.get('.auth__button').click();
         cy.get('.header__btns > [href="/shop"]').click();
         cy.get('.shop__list > li').not('.feature-empty').children('.shop__button').eq(0).click();
